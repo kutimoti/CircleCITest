@@ -6,9 +6,9 @@ jobs:
     steps:
       - checkout
       - run:
-          name: Greeting
-          command: echo Hello, world.
+          name: Build source
+          command: g++ -std=c++11 test.cpp
       - run:
-          name: Print the Current Time
-          command: date
+          name: Run
+          command: ./a.out
 
