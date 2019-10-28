@@ -9,8 +9,6 @@ jobs:
     
     steps:
     - uses: actions/checkout@v1
-    - name: configure
-      run: ./configure
     - name: build
       run: g++ test.cpp -o a.out
     - name: run
